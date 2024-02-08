@@ -1,0 +1,73 @@
+:root {
+  --color-success: #318e67;
+  --color-success-dark: #25865e;
+}
+
+body {
+  font-family: "Work Sans", Nunito, sans-serif;
+  font-weight: 400;
+  font-size: medium;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Degular Text", Nunito, sans-serif;
+}
+
+p Link {
+  cursor: pointer !important;
+}
+
+h1.title {
+  font-weight: 500;
+  font-size: 3.4rem;
+}
+
+label {
+  font-weight: 400;
+  font-size: medium;
+}
+
+a {
+  text-underline-offset: 0.3rem;
+  text-decoration-thickness: 2px;
+  color: #117ede;
+}
+
+a:hover {
+  color: rgb(115, 186, 249);
+}
+
+.text-green {
+  color: var(--color-success);
+  font-size: 3rem;
+}
+
+.btn {
+  border: none;
+}
+
+.btn-success {
+  background-color: var(--color-success);
+}
+
+.btn-success:hover {
+  background-color: var(--color-success-dark);
+}
+
+.text-lg {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.form-control {
+  font-size: medium;
+}
+
+.form-control::placeholder {
+  color: #aaa;
+  font-size: medium;
+}
