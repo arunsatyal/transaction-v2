@@ -67,6 +67,7 @@ The client-side application is built using the following major dependencies:
 - React
 - Axios for API requests
 - React Router for routing
+- React Bootstrap Framework
 - React Redux for state management
 - React Toastify for notifications
 - Bcrypt for hashing
@@ -75,6 +76,8 @@ The client-side application is built using the following major dependencies:
 - Mongoose for MongoDB object modeling
 
 #### Install all dependencies
+
+`yarn add react-bootstrap bootstrap`
 
 `yarn add axios`
 
@@ -96,6 +99,7 @@ Open `src/App.jsx` and replace following code:
 
 ```Javascript
 import React from "react";
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 
 function App() {
@@ -114,6 +118,26 @@ export default App;
 
 Open `index.html` and change your page title.
 
-### Cleaning up CSS
+#### Cleaning up CSS
 
-Open `src/App.css` and `src/Index.css` files and delete all the codes inside:
+Open `src/App.css` and `src/Index.css` files and delete all the codes inside. You can write your own CSS styles in those files.
+
+### Create Pages
+
+You need to create following pages using React Bootstrap framework.
+
+- Login Page
+- Signup/Registration Page
+- Transaction Page
+
+#### Creating Components
+
+To build complete page, you need to create components for each page. For example, in our project, we are creating 2 components for login and signup page as below:
+
+```bash
+src/components/loginForm.jsx
+```
+
+```bash
+src/components/signupForm.jsx
+```
