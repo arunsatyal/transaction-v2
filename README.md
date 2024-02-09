@@ -135,6 +135,10 @@ You need to create following pages using React Bootstrap framework.
 To build complete page, you need to create components for each page. For example, in our project, we are creating 2 components for login and signup page as below:
 
 ```bash
+src/components/customInput.jsx
+```
+
+```bash
 src/components/loginForm.jsx
 ```
 
