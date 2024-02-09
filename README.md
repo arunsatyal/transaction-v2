@@ -24,6 +24,42 @@ Before you begin, ensure you have the following tools installed:
 - [MongoDB Compass](https://www.mongodb.com/products/compass) for managing MongoDB
 - [Visual Studio Code](https://code.visualstudio.com/) or any preferred IDE
 
+### Installation
+
+1. Navigate your terminal to project root 'transaction-manager'
+
+2. Install Vite + React using npm or yarn:
+
+   ```bash
+   npm create vite@latest`
+   ```
+
+   ```bash
+   yarn create vite
+   ```
+
+3. Installation will ask for your:
+
+- Project name : transaction-v2 (you can give any name as per your choice)
+- Select a framework: React
+- Select a variant: JavaScript
+
+4. Navigate to your front-end folder and run yarn
+
+```bash
+cd transaction-v2
+```
+
+```bash
+yarn
+```
+
+5. Start the application:
+
+```bash
+yarn dev
+```
+
 ### Dependencies
 
 The client-side application is built using the following major dependencies:
@@ -38,7 +74,7 @@ The client-side application is built using the following major dependencies:
 - Express as the backend framework
 - Mongoose for MongoDB object modeling
 
-#### Installation
+#### Install all dependencies
 
 `yarn add axios`
 
@@ -50,24 +86,34 @@ The client-side application is built using the following major dependencies:
 
 `yarn add bcryptjs`
 
-### Installation
+### Cleaning Up
 
-1. Create new folder 'transaction-client' in your project root
+You must clean-up some codes from default files
 
-2. Clone the repository to the folder:
-   ```bash
-   git clone <repository URL>
-   ```
-3. Navigate to the folder 'transaction-client' and install Vite + React
+#### App.jsx
 
-```bash
-yarn create vite
+Open `src/App.jsx` and replace following code:
+
+```Javascript
+import React from "react";
+import "./App.css";
+
+function App() {
+  return (
+    <>
+      <h1>Hello World</h1>
+    </>
+  );
+}
+
+export default App;
+
 ```
 
-Installation will ask for your project name, description, author etc. Just leave it blank and keep hitting enter until the installation complete.
+#### Change Page Title
 
-4. Start the application:
+Open `index.html` and change your page title.
 
-```bash
-yarn dev
-```
+### Cleaning up CSS
+
+Open `src/App.css` and `src/Index.css` files and delete all the codes inside:
